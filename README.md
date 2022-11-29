@@ -1,4 +1,3 @@
-
 # Mathematical Notation
 
 ## Introduction
@@ -100,7 +99,7 @@ for i in range(len(w)):
 
 In the above example, we use the counter in our for loop as the index to get each subsequent element out of `w` and `x` and multiply them together. We can denote the same thing with Sigma Notation as follows:
 
-$$\LARGE \sum_{i=1}^{w} w_i x_i $$
+$$\LARGE \sum_{i=1}^{\text{len}(w)} w_i x_i $$
 
 **_NOTE:_** Can you spot the difference? In our for loop, our index starts at 0, while in our Sigma Notation, our index starts at 1. In practice, they still mean the same thing--start at the first element in each list, multiply them, and add them to the sum, and then continue until we've done that for every item in the list `w`. The Sigma Notation starts at 1 because mathematicians start counting at 1, whereas programmers start counting at 0. **_Remember this--it'll save you from buggy code later on!_** 
 
